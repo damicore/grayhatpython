@@ -17,7 +17,7 @@ class debugger():
         #instantiate the structs
         startupinfo = STARTUPINFO()
         process_information = PROCESS_INFORMATION()
-
+        
         # The following two options allow the started process
         # to be shown as a separate window. This also illustrates
         # how different settings in the STARTUPINFO struct can affect
