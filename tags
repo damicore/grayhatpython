@@ -1,0 +1,96 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BYTE	my_debugger_defines.py	/^BYTE      = c_ubyte$/;"	v
+CONTEXT	my_debugger_defines.py	/^class CONTEXT(Structure):$/;"	c
+CONTEXT_DEBUG_REGISTERS	my_debugger_defines.py	/^CONTEXT_DEBUG_REGISTERS        = 0x00010010$/;"	v
+CONTEXT_FULL	my_debugger_defines.py	/^CONTEXT_FULL                   = 0x00010007$/;"	v
+CREATE_NEW_CONSOLE	my_debugger_defines.py	/^CREATE_NEW_CONSOLE    = 0x00000010$/;"	v
+CREATE_PROCESS_DEBUG_EVENT	my_debugger_defines.py	/^CREATE_PROCESS_DEBUG_EVENT =    0x3$/;"	v
+CREATE_THREAD_DEBUG_EVENT	my_debugger_defines.py	/^CREATE_THREAD_DEBUG_EVENT  =    0x2$/;"	v
+DBG_CONTINUE	my_debugger_defines.py	/^DBG_CONTINUE          = 0x00010002$/;"	v
+DEBUG_EVENT	my_debugger_defines.py	/^class DEBUG_EVENT(Structure):$/;"	c
+DEBUG_EVENT_UNION	my_debugger_defines.py	/^class DEBUG_EVENT_UNION(Union):$/;"	c
+DEBUG_PROCESS	my_debugger_defines.py	/^DEBUG_PROCESS         = 0x00000001$/;"	v
+DWORD	my_debugger_defines.py	/^DWORD     = c_ulong$/;"	v
+EXCEPTION_ACCESS_VIOLATION	my_debugger_defines.py	/^EXCEPTION_ACCESS_VIOLATION     = 0xC0000005$/;"	v
+EXCEPTION_BREAKPOINT	my_debugger_defines.py	/^EXCEPTION_BREAKPOINT           = 0x80000003$/;"	v
+EXCEPTION_DEBUG_EVENT	my_debugger_defines.py	/^EXCEPTION_DEBUG_EVENT      =    0x1$/;"	v
+EXCEPTION_DEBUG_INFO	my_debugger_defines.py	/^class EXCEPTION_DEBUG_INFO(Structure):$/;"	c
+EXCEPTION_GUARD_PAGE	my_debugger_defines.py	/^EXCEPTION_GUARD_PAGE           = 0x80000001$/;"	v
+EXCEPTION_RECORD	my_debugger_defines.py	/^class EXCEPTION_RECORD(Structure):$/;"	c
+EXCEPTION_SINGLE_STEP	my_debugger_defines.py	/^EXCEPTION_SINGLE_STEP          = 0x80000004$/;"	v
+EXIT_PROCESS_DEBUG_EVENT	my_debugger_defines.py	/^EXIT_PROCESS_DEBUG_EVENT   =    0x5$/;"	v
+EXIT_THREAD_DEBUG_EVENT	my_debugger_defines.py	/^EXIT_THREAD_DEBUG_EVENT    =    0x4$/;"	v
+FLOATING_SAVE_AREA	my_debugger_defines.py	/^class FLOATING_SAVE_AREA(Structure):$/;"	c
+HANDLE	my_debugger_defines.py	/^HANDLE    = c_void_p$/;"	v
+HW_ACCESS	my_debugger_defines.py	/^HW_ACCESS                      = 0x00000003$/;"	v
+HW_EXECUTE	my_debugger_defines.py	/^HW_EXECUTE                     = 0x00000000$/;"	v
+HW_WRITE	my_debugger_defines.py	/^HW_WRITE                       = 0x00000001$/;"	v
+INFINITE	my_debugger_defines.py	/^INFINITE              = 0xFFFFFFFF$/;"	v
+LOAD_DLL_DEBUG_EVENT	my_debugger_defines.py	/^LOAD_DLL_DEBUG_EVENT       =    0x6$/;"	v
+LPBYTE	my_debugger_defines.py	/^LPBYTE    = POINTER(c_ubyte)$/;"	v
+LPTSTR	my_debugger_defines.py	/^LPTSTR    = POINTER(c_char) $/;"	v
+LPVOID	my_debugger_defines.py	/^LPVOID    = c_void_p$/;"	v
+MEMORY_BASIC_INFORMATION	my_debugger_defines.py	/^class MEMORY_BASIC_INFORMATION(Structure):$/;"	c
+OUTPUT_DEBUG_STRING_EVENT	my_debugger_defines.py	/^OUTPUT_DEBUG_STRING_EVENT  =    0x8$/;"	v
+PAGE_EXECUTE	my_debugger_defines.py	/^PAGE_EXECUTE                   = 0x00000010$/;"	v
+PAGE_EXECUTE_READ	my_debugger_defines.py	/^PAGE_EXECUTE_READ              = 0x00000020$/;"	v
+PAGE_EXECUTE_READWRITE	my_debugger_defines.py	/^PAGE_EXECUTE_READWRITE         = 0x00000040$/;"	v
+PAGE_EXECUTE_WRITECOPY	my_debugger_defines.py	/^PAGE_EXECUTE_WRITECOPY         = 0x00000080$/;"	v
+PAGE_GUARD	my_debugger_defines.py	/^PAGE_GUARD                     = 0x00000100$/;"	v
+PAGE_NOACCESS	my_debugger_defines.py	/^PAGE_NOACCESS                  = 0x00000001$/;"	v
+PAGE_NOCACHE	my_debugger_defines.py	/^PAGE_NOCACHE                   = 0x00000200$/;"	v
+PAGE_READONLY	my_debugger_defines.py	/^PAGE_READONLY                  = 0x00000002$/;"	v
+PAGE_READWRITE	my_debugger_defines.py	/^PAGE_READWRITE                 = 0x00000004$/;"	v
+PAGE_WRITECOMBINE	my_debugger_defines.py	/^PAGE_WRITECOMBINE              = 0x00000400$/;"	v
+PAGE_WRITECOPY	my_debugger_defines.py	/^PAGE_WRITECOPY                 = 0x00000008$/;"	v
+PROCESS_ALL_ACCESS	my_debugger_defines.py	/^PROCESS_ALL_ACCESS    = 0x001F0FFF$/;"	v
+PROCESS_INFORMATION	my_debugger_defines.py	/^class PROCESS_INFORMATION(Structure):$/;"	c
+PROC_STRUCT	my_debugger_defines.py	/^class PROC_STRUCT(Structure):$/;"	c
+PVOID	my_debugger_defines.py	/^PVOID     = c_void_p$/;"	v
+RIP_EVENT	my_debugger_defines.py	/^RIP_EVENT                  =    0x9$/;"	v
+SIZE_T	my_debugger_defines.py	/^SIZE_T    = c_ulong$/;"	v
+STARTUPINFO	my_debugger_defines.py	/^class STARTUPINFO(Structure):$/;"	c
+SYSTEM_INFO	my_debugger_defines.py	/^class SYSTEM_INFO(Structure):$/;"	c
+SYSTEM_INFO_UNION	my_debugger_defines.py	/^class SYSTEM_INFO_UNION(Union):$/;"	c
+TH32CS_INHERIT	my_debugger_defines.py	/^TH32CS_INHERIT      = 0x80000000$/;"	v
+TH32CS_SNAPALL	my_debugger_defines.py	/^TH32CS_SNAPALL      = (TH32CS_SNAPHEAPLIST | TH32CS_SNAPPROCESS | TH32CS_SNAPTHREAD | TH32CS_SNAPMODULE)$/;"	v
+TH32CS_SNAPHEAPLIST	my_debugger_defines.py	/^TH32CS_SNAPHEAPLIST = 0x00000001$/;"	v
+TH32CS_SNAPMODULE	my_debugger_defines.py	/^TH32CS_SNAPMODULE   = 0x00000008$/;"	v
+TH32CS_SNAPPROCESS	my_debugger_defines.py	/^TH32CS_SNAPPROCESS  = 0x00000002$/;"	v
+TH32CS_SNAPTHREAD	my_debugger_defines.py	/^TH32CS_SNAPTHREAD   = 0x00000004$/;"	v
+THREADENTRY32	my_debugger_defines.py	/^class THREADENTRY32(Structure):$/;"	c
+THREAD_ALL_ACCESS	my_debugger_defines.py	/^THREAD_ALL_ACCESS   = 0x001F03FF$/;"	v
+UINT_PTR	my_debugger_defines.py	/^UINT_PTR  = c_ulong$/;"	v
+UNLOAD_DLL_DEBUG_EVENT	my_debugger_defines.py	/^UNLOAD_DLL_DEBUG_EVENT     =    0x7$/;"	v
+WORD	my_debugger_defines.py	/^WORD      = c_ushort$/;"	v
+_EXCEPTION_RECORD	my_debugger_defines.py	/^class _EXCEPTION_RECORD(Structure):$/;"	c
+__init__	my_debugger.py	/^    def __init__(self):$/;"	m	class:debugger
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:CONTEXT
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:DEBUG_EVENT
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:DEBUG_EVENT_UNION
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:EXCEPTION_DEBUG_INFO
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:MEMORY_BASIC_INFORMATION
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:PROCESS_INFORMATION
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:PROC_STRUCT
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:STARTUPINFO
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:SYSTEM_INFO
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:SYSTEM_INFO_UNION
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:THREADENTRY32
+_fields_	my_debugger_defines.py	/^    _fields_ = [$/;"	v	class:_EXCEPTION_RECORD
+_fields_	my_debugger_defines.py	/^   _fields_ = [$/;"	v	class:FLOATING_SAVE_AREA
+attach	my_debugger.py	/^    def attach(self,pid):$/;"	m	class:debugger
+debugger	my_debugger.py	/^class debugger():$/;"	c
+debugger	my_test.py	/^debugger = my_debugger.debugger()$/;"	v
+detach	my_debugger.py	/^    def detach(self):$/;"	m	class:debugger
+get_debug_event	my_debugger.py	/^    def get_debug_event(self):$/;"	m	class:debugger
+kernel32	my_debugger.py	/^kernel32 = windll.kernel32$/;"	v
+load	my_debugger.py	/^    def load(self,path_to_exe):$/;"	m	class:debugger
+my_debugger	my_test.py	/^import my_debugger$/;"	i
+open_process	my_debugger.py	/^    def open_process(self,pid):$/;"	m	class:debugger
+pid	my_test.py	/^pid = raw_input("Enter the PID of the process to attach to:")$/;"	v
+run	my_debugger.py	/^    def run(self):$/;"	m	class:debugger
