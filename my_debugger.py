@@ -57,7 +57,7 @@ class debugger():
 
     def open_process(self,pid):
 
-        h_process = kernel32.OpenProcess(PROCESS_ALL_ACCESS,pid,False)
+        h_process = kernel32.OpenProcess(PROCESS_ALL_ACCESS,False,pid)
         return h_process
 
     def attach(self,pid):
@@ -122,15 +122,20 @@ class debugger():
         thread_entry = THREADENTRY32()
         thread_list = []
         snapshot = kernel32.CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, self.pid)
+        print("snapshot = " + str(snapshot))
 
         if snapshot is not None:
             #You have to set the size of the struct
             #or the call will fail
             thread_entry.dwSize = sizeof(thread_entry)
             success = kernel32.Thread32First(snapshot, byref(thread_entry))
+            print("sizeof(threadentry) = " + str(thread_entry.dwSize))
+            print("self.pid = "  + str(self.pid) + " and thread_entry.th32OwnerProcessID = " + str(thread_entry.th32OwnerProcessID))
+            print("ERROR: %s" % FormatError(kernel32.GetLastError()))
 
             while success:
                 if thread_entry.th32OwnerProcessID == self.pid:
+                    thread_list.append(thread_entry.th32ThreadID)
                     success = kernel32.Thread32Next(snapshot, byref(thread_entry))
 
             kernel32.CloseHandle(snapshot)
@@ -139,7 +144,7 @@ class debugger():
         else:
             return False
 
-    def get_thread_context (self, thread_id):
+    def get_thread_context (self, thread_id=None, h_thread=None):
 
         context = CONTEXT()
         context.ContextFlags = CONTEXT_FULL | CONTEXT_DEBUG_REGISTERS
