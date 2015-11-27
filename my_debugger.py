@@ -57,7 +57,7 @@ class debugger():
 
     def open_process(self,pid):
 
-        h_process = kernel32.OpenProcess(PROCESS_ALL_ACCESS,False,pid)
+        h_process = kernel32.OpenProcess(PROCESS_ALL_ACCESS,pid,False)
         return h_process
 
     def attach(self,pid):
@@ -106,3 +106,40 @@ class debugger():
         else:
             print("There was an error.")
             return False
+
+    def open_thread (self, thread_id):
+
+        h_thread = kernel32.OpenThread(THREAD_ALL_ACCESS, None, thread_id)
+
+        if h_thread is not None:
+            return h_thread
+        else:
+            print("[*] Could not obtain a valid thread handle.")
+            return False
+
+    def enumerate_threads(self):
+
+        thread_entry = THREADENTRY32()
+        thread_list = []
+        snapshot = kernel32.CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, self.pid)
+
+        if snapshot is not None:
+            #You have to set the size of the struct
+            #or the call will fail
+            thread_entry.dwSize = sizeof(thread_entry)
+            success = kernel32.Thread32First(snapshot, byref(thread_entry))
+
+            while success:
+                if thread_entry.th32OwnerProcessID == self.pid:
+                    success = kernel32.Thread32Next(snapshot, byref(thread_entry))
+
+            kernel32.CloseHandle(snapshot)
+            return thread_list
+
+        else:
+            return False
+
+    def get_thread_context (self, thread_id):
+
+        context = CONTEXT()
+        context.ContextFlags = CONTEXT_FULL | CONTEXT_DEBUG_REGISTERS
